@@ -7,42 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		658355551BA9ACA80097DB4F /* DPNotify.h in Headers */ = {isa = PBXBuildFile; fileRef = 658355541BA9ACA80097DB4F /* DPNotify.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6583555C1BA9ACA80097DB4F /* DPNotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658355521BA9ACA80097DB4F /* DPNotify.framework */; settings = {ASSET_TAGS = (); }; };
-		658355631BA9ACA80097DB4F /* DPNotifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658355621BA9ACA80097DB4F /* DPNotifyTests.swift */; };
-		658355671BA9ACA80097DB4F /* DPNotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658355521BA9ACA80097DB4F /* DPNotify.framework */; };
-		658355681BA9ACA80097DB4F /* DPNotify.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 658355521BA9ACA80097DB4F /* DPNotify.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		658355701BA9ACCC0097DB4F /* DPNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAA9C391B3DC29F00FEB971 /* DPNotify.swift */; };
+		658355961BA9B0050097DB4F /* DPNotifyFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 658355951BA9B0050097DB4F /* DPNotifyFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6583559D1BA9B0050097DB4F /* DPNotifyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658355931BA9B0050097DB4F /* DPNotifyFramework.framework */; settings = {ASSET_TAGS = (); }; };
+		658355A41BA9B0050097DB4F /* DPNotifyFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658355A31BA9B0050097DB4F /* DPNotifyFrameworkTests.swift */; };
+		658355A81BA9B0050097DB4F /* DPNotifyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658355931BA9B0050097DB4F /* DPNotifyFramework.framework */; };
+		658355A91BA9B0050097DB4F /* DPNotifyFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 658355931BA9B0050097DB4F /* DPNotifyFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		658355B11BA9B0350097DB4F /* DPNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6583558C1BA9AF410097DB4F /* DPNotify.swift */; };
 		8D2C2D4C1B3D8E0000FD3DE9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2C2D4B1B3D8E0000FD3DE9 /* TableViewController.swift */; };
 		8D746C6D1B3D0F3800372FA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D746C6C1B3D0F3800372FA0 /* AppDelegate.swift */; };
 		8D746C721B3D0F3800372FA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D746C701B3D0F3800372FA0 /* Main.storyboard */; };
 		8D746C741B3D0F3800372FA0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D746C731B3D0F3800372FA0 /* Images.xcassets */; };
 		8D746C771B3D0F3800372FA0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D746C751B3D0F3800372FA0 /* LaunchScreen.xib */; };
 		8D746C831B3D0F3900372FA0 /* DemoDPNotifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D746C821B3D0F3900372FA0 /* DemoDPNotifyTests.swift */; };
-		8DAA9C3A1B3DC29F00FEB971 /* DPNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAA9C391B3DC29F00FEB971 /* DPNotify.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6583555D1BA9ACA80097DB4F /* PBXContainerItemProxy */ = {
+		6583559E1BA9B0050097DB4F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8D746C5F1B3D0F3800372FA0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 658355511BA9ACA80097DB4F;
-			remoteInfo = DPNotify;
+			remoteGlobalIDString = 658355921BA9B0050097DB4F;
+			remoteInfo = DPNotifyFramework;
 		};
-		6583555F1BA9ACA80097DB4F /* PBXContainerItemProxy */ = {
+		658355A01BA9B0050097DB4F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8D746C5F1B3D0F3800372FA0 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8D746C661B3D0F3800372FA0;
 			remoteInfo = DemoDPNotify;
 		};
-		658355651BA9ACA80097DB4F /* PBXContainerItemProxy */ = {
+		658355A61BA9B0050097DB4F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8D746C5F1B3D0F3800372FA0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 658355511BA9ACA80097DB4F;
-			remoteInfo = DPNotify;
+			remoteGlobalIDString = 658355921BA9B0050097DB4F;
+			remoteInfo = DPNotifyFramework;
 		};
 		8D746C7D1B3D0F3900372FA0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -60,7 +59,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				658355681BA9ACA80097DB4F /* DPNotify.framework in Embed Frameworks */,
+				658355A91BA9B0050097DB4F /* DPNotifyFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,12 +67,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		658355521BA9ACA80097DB4F /* DPNotify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DPNotify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		658355541BA9ACA80097DB4F /* DPNotify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPNotify.h; sourceTree = "<group>"; };
-		658355561BA9ACA80097DB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6583555B1BA9ACA80097DB4F /* DPNotifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DPNotifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		658355621BA9ACA80097DB4F /* DPNotifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPNotifyTests.swift; sourceTree = "<group>"; };
 		658355641BA9ACA80097DB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6583558C1BA9AF410097DB4F /* DPNotify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPNotify.swift; sourceTree = "<group>"; };
+		658355931BA9B0050097DB4F /* DPNotifyFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DPNotifyFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		658355951BA9B0050097DB4F /* DPNotifyFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPNotifyFramework.h; sourceTree = "<group>"; };
+		658355971BA9B0050097DB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6583559C1BA9B0050097DB4F /* DPNotifyFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DPNotifyFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		658355A31BA9B0050097DB4F /* DPNotifyFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPNotifyFrameworkTests.swift; sourceTree = "<group>"; };
+		658355A51BA9B0050097DB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D2C2D4B1B3D8E0000FD3DE9 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		8D746C671B3D0F3800372FA0 /* DemoDPNotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoDPNotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D746C6B1B3D0F3800372FA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,22 +86,21 @@
 		8D746C7C1B3D0F3900372FA0 /* DemoDPNotifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoDPNotifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D746C811B3D0F3900372FA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D746C821B3D0F3900372FA0 /* DemoDPNotifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoDPNotifyTests.swift; sourceTree = "<group>"; };
-		8DAA9C391B3DC29F00FEB971 /* DPNotify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPNotify.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6583554E1BA9ACA80097DB4F /* Frameworks */ = {
+		6583558F1BA9B0050097DB4F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		658355581BA9ACA80097DB4F /* Frameworks */ = {
+		658355991BA9B0050097DB4F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6583555C1BA9ACA80097DB4F /* DPNotify.framework in Frameworks */,
+				6583559D1BA9B0050097DB4F /* DPNotifyFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				658355671BA9ACA80097DB4F /* DPNotify.framework in Frameworks */,
+				658355A81BA9B0050097DB4F /* DPNotifyFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,8 +125,7 @@
 		658355531BA9ACA80097DB4F /* DPNotify */ = {
 			isa = PBXGroup;
 			children = (
-				658355541BA9ACA80097DB4F /* DPNotify.h */,
-				658355561BA9ACA80097DB4F /* Info.plist */,
+				6583558C1BA9AF410097DB4F /* DPNotify.swift */,
 			);
 			path = DPNotify;
 			sourceTree = "<group>";
@@ -139,6 +139,24 @@
 			path = DPNotifyTests;
 			sourceTree = "<group>";
 		};
+		658355941BA9B0050097DB4F /* DPNotifyFramework */ = {
+			isa = PBXGroup;
+			children = (
+				658355951BA9B0050097DB4F /* DPNotifyFramework.h */,
+				658355971BA9B0050097DB4F /* Info.plist */,
+			);
+			path = DPNotifyFramework;
+			sourceTree = "<group>";
+		};
+		658355A21BA9B0050097DB4F /* DPNotifyFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				658355A31BA9B0050097DB4F /* DPNotifyFrameworkTests.swift */,
+				658355A51BA9B0050097DB4F /* Info.plist */,
+			);
+			path = DPNotifyFrameworkTests;
+			sourceTree = "<group>";
+		};
 		8D746C5E1B3D0F3800372FA0 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +164,8 @@
 				8D746C7F1B3D0F3900372FA0 /* DemoDPNotifyTests */,
 				658355531BA9ACA80097DB4F /* DPNotify */,
 				658355611BA9ACA80097DB4F /* DPNotifyTests */,
+				658355941BA9B0050097DB4F /* DPNotifyFramework */,
+				658355A21BA9B0050097DB4F /* DPNotifyFrameworkTests */,
 				8D746C681B3D0F3800372FA0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -155,8 +175,8 @@
 			children = (
 				8D746C671B3D0F3800372FA0 /* DemoDPNotify.app */,
 				8D746C7C1B3D0F3900372FA0 /* DemoDPNotifyTests.xctest */,
-				658355521BA9ACA80097DB4F /* DPNotify.framework */,
-				6583555B1BA9ACA80097DB4F /* DPNotifyTests.xctest */,
+				658355931BA9B0050097DB4F /* DPNotifyFramework.framework */,
+				6583559C1BA9B0050097DB4F /* DPNotifyFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,7 +184,6 @@
 		8D746C691B3D0F3800372FA0 /* DemoDPNotify */ = {
 			isa = PBXGroup;
 			children = (
-				8DAA9C381B3DC29F00FEB971 /* DPNotify */,
 				8D746C6C1B3D0F3800372FA0 /* AppDelegate.swift */,
 				8D2C2D4B1B3D8E0000FD3DE9 /* TableViewController.swift */,
 				8D746C701B3D0F3800372FA0 /* Main.storyboard */,
@@ -200,63 +219,55 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8DAA9C381B3DC29F00FEB971 /* DPNotify */ = {
-			isa = PBXGroup;
-			children = (
-				8DAA9C391B3DC29F00FEB971 /* DPNotify.swift */,
-			);
-			path = DPNotify;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		6583554F1BA9ACA80097DB4F /* Headers */ = {
+		658355901BA9B0050097DB4F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				658355551BA9ACA80097DB4F /* DPNotify.h in Headers */,
+				658355961BA9B0050097DB4F /* DPNotifyFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		658355511BA9ACA80097DB4F /* DPNotify */ = {
+		658355921BA9B0050097DB4F /* DPNotifyFramework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6583556D1BA9ACA80097DB4F /* Build configuration list for PBXNativeTarget "DPNotify" */;
+			buildConfigurationList = 658355AA1BA9B0050097DB4F /* Build configuration list for PBXNativeTarget "DPNotifyFramework" */;
 			buildPhases = (
-				6583554D1BA9ACA80097DB4F /* Sources */,
-				6583554E1BA9ACA80097DB4F /* Frameworks */,
-				6583554F1BA9ACA80097DB4F /* Headers */,
-				658355501BA9ACA80097DB4F /* Resources */,
+				6583558E1BA9B0050097DB4F /* Sources */,
+				6583558F1BA9B0050097DB4F /* Frameworks */,
+				658355901BA9B0050097DB4F /* Headers */,
+				658355911BA9B0050097DB4F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DPNotify;
-			productName = DPNotify;
-			productReference = 658355521BA9ACA80097DB4F /* DPNotify.framework */;
+			name = DPNotifyFramework;
+			productName = DPNotifyFramework;
+			productReference = 658355931BA9B0050097DB4F /* DPNotifyFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6583555A1BA9ACA80097DB4F /* DPNotifyTests */ = {
+		6583559B1BA9B0050097DB4F /* DPNotifyFrameworkTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6583556F1BA9ACA80097DB4F /* Build configuration list for PBXNativeTarget "DPNotifyTests" */;
+			buildConfigurationList = 658355AD1BA9B0050097DB4F /* Build configuration list for PBXNativeTarget "DPNotifyFrameworkTests" */;
 			buildPhases = (
-				658355571BA9ACA80097DB4F /* Sources */,
-				658355581BA9ACA80097DB4F /* Frameworks */,
-				658355591BA9ACA80097DB4F /* Resources */,
+				658355981BA9B0050097DB4F /* Sources */,
+				658355991BA9B0050097DB4F /* Frameworks */,
+				6583559A1BA9B0050097DB4F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6583555E1BA9ACA80097DB4F /* PBXTargetDependency */,
-				658355601BA9ACA80097DB4F /* PBXTargetDependency */,
+				6583559F1BA9B0050097DB4F /* PBXTargetDependency */,
+				658355A11BA9B0050097DB4F /* PBXTargetDependency */,
 			);
-			name = DPNotifyTests;
-			productName = DPNotifyTests;
-			productReference = 6583555B1BA9ACA80097DB4F /* DPNotifyTests.xctest */;
+			name = DPNotifyFrameworkTests;
+			productName = DPNotifyFrameworkTests;
+			productReference = 6583559C1BA9B0050097DB4F /* DPNotifyFrameworkTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		8D746C661B3D0F3800372FA0 /* DemoDPNotify */ = {
@@ -271,7 +282,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				658355661BA9ACA80097DB4F /* PBXTargetDependency */,
+				658355A71BA9B0050097DB4F /* PBXTargetDependency */,
 			);
 			name = DemoDPNotify;
 			productName = DemoDPNotify;
@@ -307,10 +318,10 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "@baophan94";
 				TargetAttributes = {
-					658355511BA9ACA80097DB4F = {
+					658355921BA9B0050097DB4F = {
 						CreatedOnToolsVersion = 7.0;
 					};
-					6583555A1BA9ACA80097DB4F = {
+					6583559B1BA9B0050097DB4F = {
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = 8D746C661B3D0F3800372FA0;
 					};
@@ -338,21 +349,21 @@
 			targets = (
 				8D746C661B3D0F3800372FA0 /* DemoDPNotify */,
 				8D746C7B1B3D0F3900372FA0 /* DemoDPNotifyTests */,
-				658355511BA9ACA80097DB4F /* DPNotify */,
-				6583555A1BA9ACA80097DB4F /* DPNotifyTests */,
+				658355921BA9B0050097DB4F /* DPNotifyFramework */,
+				6583559B1BA9B0050097DB4F /* DPNotifyFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		658355501BA9ACA80097DB4F /* Resources */ = {
+		658355911BA9B0050097DB4F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		658355591BA9ACA80097DB4F /* Resources */ = {
+		6583559A1BA9B0050097DB4F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -379,19 +390,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6583554D1BA9ACA80097DB4F /* Sources */ = {
+		6583558E1BA9B0050097DB4F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				658355701BA9ACCC0097DB4F /* DPNotify.swift in Sources */,
+				658355B11BA9B0350097DB4F /* DPNotify.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		658355571BA9ACA80097DB4F /* Sources */ = {
+		658355981BA9B0050097DB4F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				658355631BA9ACA80097DB4F /* DPNotifyTests.swift in Sources */,
+				658355A41BA9B0050097DB4F /* DPNotifyFrameworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +411,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D2C2D4C1B3D8E0000FD3DE9 /* TableViewController.swift in Sources */,
-				8DAA9C3A1B3DC29F00FEB971 /* DPNotify.swift in Sources */,
 				8D746C6D1B3D0F3800372FA0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,20 +426,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6583555E1BA9ACA80097DB4F /* PBXTargetDependency */ = {
+		6583559F1BA9B0050097DB4F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 658355511BA9ACA80097DB4F /* DPNotify */;
-			targetProxy = 6583555D1BA9ACA80097DB4F /* PBXContainerItemProxy */;
+			target = 658355921BA9B0050097DB4F /* DPNotifyFramework */;
+			targetProxy = 6583559E1BA9B0050097DB4F /* PBXContainerItemProxy */;
 		};
-		658355601BA9ACA80097DB4F /* PBXTargetDependency */ = {
+		658355A11BA9B0050097DB4F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8D746C661B3D0F3800372FA0 /* DemoDPNotify */;
-			targetProxy = 6583555F1BA9ACA80097DB4F /* PBXContainerItemProxy */;
+			targetProxy = 658355A01BA9B0050097DB4F /* PBXContainerItemProxy */;
 		};
-		658355661BA9ACA80097DB4F /* PBXTargetDependency */ = {
+		658355A71BA9B0050097DB4F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 658355511BA9ACA80097DB4F /* DPNotify */;
-			targetProxy = 658355651BA9ACA80097DB4F /* PBXContainerItemProxy */;
+			target = 658355921BA9B0050097DB4F /* DPNotifyFramework */;
+			targetProxy = 658355A61BA9B0050097DB4F /* PBXContainerItemProxy */;
 		};
 		8D746C7E1B3D0F3900372FA0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -458,7 +468,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		658355691BA9ACA80097DB4F /* Debug */ = {
+		658355AB1BA9B0050097DB4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
@@ -467,11 +477,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DPNotify/Info.plist;
+				INFOPLIST_FILE = DPNotifyFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dinophan.DPNotify;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinophan.DPNotifyFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -479,7 +489,7 @@
 			};
 			name = Debug;
 		};
-		6583556A1BA9ACA80097DB4F /* Release */ = {
+		658355AC1BA9B0050097DB4F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
@@ -487,11 +497,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DPNotify/Info.plist;
+				INFOPLIST_FILE = DPNotifyFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dinophan.DPNotify;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinophan.DPNotifyFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -499,26 +509,26 @@
 			};
 			name = Release;
 		};
-		6583556B1BA9ACA80097DB4F /* Debug */ = {
+		658355AE1BA9B0050097DB4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				INFOPLIST_FILE = DPNotifyTests/Info.plist;
+				INFOPLIST_FILE = DPNotifyFrameworkTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dinophan.DPNotifyTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinophan.DPNotifyFrameworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoDPNotify.app/DemoDPNotify";
 			};
 			name = Debug;
 		};
-		6583556C1BA9ACA80097DB4F /* Release */ = {
+		658355AF1BA9B0050097DB4F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = DPNotifyTests/Info.plist;
+				INFOPLIST_FILE = DPNotifyFrameworkTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dinophan.DPNotifyTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinophan.DPNotifyFrameworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoDPNotify.app/DemoDPNotify";
 			};
@@ -671,21 +681,23 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6583556D1BA9ACA80097DB4F /* Build configuration list for PBXNativeTarget "DPNotify" */ = {
+		658355AA1BA9B0050097DB4F /* Build configuration list for PBXNativeTarget "DPNotifyFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				658355691BA9ACA80097DB4F /* Debug */,
-				6583556A1BA9ACA80097DB4F /* Release */,
+				658355AB1BA9B0050097DB4F /* Debug */,
+				658355AC1BA9B0050097DB4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		6583556F1BA9ACA80097DB4F /* Build configuration list for PBXNativeTarget "DPNotifyTests" */ = {
+		658355AD1BA9B0050097DB4F /* Build configuration list for PBXNativeTarget "DPNotifyFrameworkTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6583556B1BA9ACA80097DB4F /* Debug */,
-				6583556C1BA9ACA80097DB4F /* Release */,
+				658355AE1BA9B0050097DB4F /* Debug */,
+				658355AF1BA9B0050097DB4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D746C621B3D0F3800372FA0 /* Build configuration list for PBXProject "DemoDPNotify" */ = {
 			isa = XCConfigurationList;
