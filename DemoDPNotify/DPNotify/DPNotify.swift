@@ -16,16 +16,16 @@ import UIKit
 
 * Show notify:
 
-    showNotifyInView(inView: UIView, title: String, dismissOnTap: Bool) {}
-    showNotifyInView(inView: UIView, title: String, dismissOnTap: Bool, notifyType: DPNotifyType) {}
-    showNotifyInView(inView: UIView, title: String, dismissOnTap: Bool, notifyType: DPNotifyType, delay: NSTimeInterval) {}
-    showNotifyInView(inView: UIView, title: String, dismissOnTap: Bool, notifyType: DPNotifyType, delay: NSTimeInterval, completionHandler: () -> Void) {}
+showNotifyInView(inView: UIView, title: String, dismissOnTap: Bool) {}
+showNotifyInView(inView: UIView, title: String, dismissOnTap: Bool, notifyType: DPNotifyType) {}
+showNotifyInView(inView: UIView, title: String, dismissOnTap: Bool, notifyType: DPNotifyType, delay: NSTimeInterval) {}
+showNotifyInView(inView: UIView, title: String, dismissOnTap: Bool, notifyType: DPNotifyType, delay: NSTimeInterval, completionHandler: () -> Void) {}
 
 
 * Dismiss notify:
 
-    dismissNotify() {}
-    dismissNotify(completion: () -> Void) {}
+dismissNotify() {}
+dismissNotify(completion: () -> Void) {}
 
 ***************************************/
 
@@ -70,7 +70,7 @@ class DPNotify: NSObject {
         self.bannerView = UIView()
         self.bannerView.backgroundColor = self.bannerBackgroundColor
         
-        var calculationView: UITextView = UITextView()
+        let calculationView: UITextView = UITextView()
         calculationView.attributedText = NSAttributedString(string: self.notifyTitle, attributes:
             [
                 NSFontAttributeName: notifyTitleFont
@@ -91,14 +91,14 @@ class DPNotify: NSObject {
             self.bannerView.alpha = 1
             titleView.alpha = 1
             self.bannerView.frame = CGRectMake(0, 0, containerFrame.width, titleView.frame.size.height + 5)
-        }) { (Bool) -> Void in
-            if self.bannerView != nil {
-                UIView.animateWithDuration(0.2, animations: { () -> Void in
-                    self.bannerView.frame = CGRectMake(0, 0, containerFrame.width, titleView.frame.size.height)
-                }, completion: { (Bool) -> Void in
-                    
-                })
-            }
+            }) { (Bool) -> Void in
+                if self.bannerView != nil {
+                    UIView.animateWithDuration(0.2, animations: { () -> Void in
+                        self.bannerView.frame = CGRectMake(0, 0, containerFrame.width, titleView.frame.size.height)
+                        }, completion: { (Bool) -> Void in
+                            
+                    })
+                }
         }
     }
     
@@ -119,7 +119,6 @@ class DPNotify: NSObject {
         case DPNotifyType.DISABLED: self.applyDisabledType()
         case DPNotifyType.SUCCESS: self.applySuccessType()
         case DPNotifyType.WARNING: self.applyWarningType()
-        default: self.applyDefaultType()
         }
         
         self.notifyTitle = title
@@ -129,7 +128,7 @@ class DPNotify: NSObject {
         self.bannerView = UIView()
         self.bannerView.backgroundColor = self.bannerBackgroundColor
         
-        var calculationView: UITextView = UITextView()
+        let calculationView: UITextView = UITextView()
         calculationView.attributedText = NSAttributedString(string: self.notifyTitle, attributes:
             [
                 NSFontAttributeName: notifyTitleFont
@@ -156,7 +155,7 @@ class DPNotify: NSObject {
                 if self.bannerView != nil {
                     UIView.animateWithDuration(0.2, animations: { () -> Void in
                         self.bannerView.frame = CGRectMake(0, 0, containerFrame.width, titleView.frame.size.height)
-                        })
+                    })
                 }
         }
     }
@@ -178,7 +177,6 @@ class DPNotify: NSObject {
         case DPNotifyType.DISABLED: self.applyDisabledType()
         case DPNotifyType.SUCCESS: self.applySuccessType()
         case DPNotifyType.WARNING: self.applyWarningType()
-        default: self.applyDefaultType()
         }
         
         self.delayTimer = delay
@@ -190,7 +188,7 @@ class DPNotify: NSObject {
         self.bannerView = UIView()
         self.bannerView.backgroundColor = self.bannerBackgroundColor
         
-        var calculationView: UITextView = UITextView()
+        let calculationView: UITextView = UITextView()
         calculationView.attributedText = NSAttributedString(string: self.notifyTitle, attributes:
             [
                 NSFontAttributeName: notifyTitleFont
@@ -241,77 +239,76 @@ class DPNotify: NSObject {
         notifyType: DPNotifyType,
         delay: NSTimeInterval,
         completionHandler: () -> Void) {
-        
-        if self.bannerView != nil {
-            if self.tapGesture != nil {
-                self.bannerView.removeGestureRecognizer(self.tapGesture!)
-                self.tapGesture = nil
-            }
-            self.bannerView.removeFromSuperview()
-            self.bannerView = nil
-        }
-        
-        switch notifyType {
-        case DPNotifyType.DEFAULT: self.applyDefaultType()
-        case DPNotifyType.DANGER: self.applyDangerType()
-        case DPNotifyType.DISABLED: self.applyDisabledType()
-        case DPNotifyType.SUCCESS: self.applySuccessType()
-        case DPNotifyType.WARNING: self.applyWarningType()
-        default: self.applyDefaultType()
-        }
-        
-        self.delayTimer = delay
-        
-        self.notifyTitle = title
-        self.tapToDismiss = dismissOnTap
-        
-        let containerFrame: CGRect = inView.frame
-        self.bannerView = UIView()
-        self.bannerView.backgroundColor = self.bannerBackgroundColor
-        
-        var calculationView: UITextView = UITextView()
-        calculationView.attributedText = NSAttributedString(string: self.notifyTitle, attributes:
-            [
-                NSFontAttributeName: notifyTitleFont
-            ])
-        let size: CGSize = calculationView.sizeThatFits(
-            CGSizeMake(containerFrame.width - 16, CGFloat(FLT_MAX)))
-        var titleView = UITextView(
-            frame: CGRectMake(8, 0, containerFrame.width - 16, size.height))
-        titleView = applyTextViewStyle(titleView)
-        self.bannerView.addSubview(titleView)
-        self.bannerView.alpha = 0
-        self.bannerView.frame = CGRectMake(0, -titleView.frame.size.height, containerFrame.width, titleView.frame.size.height)
-        inView.addSubview(self.bannerView)
-        
-        if dismissOnTap == true {
-            addTapToDismissGesture()
-        }
-        
-        UIView.animateWithDuration(0.2, animations: { () -> Void in
-            self.bannerView.alpha = 1
-            titleView.alpha = 1
-            self.bannerView.frame = CGRectMake(0, 0, containerFrame.width, titleView.frame.size.height + 5)
-            }) { (Bool) -> Void in
-                if self.bannerView != nil {
-                    UIView.animateWithDuration(0.2, animations: { () -> Void in
-                        self.bannerView.frame = CGRectMake(0, 0, containerFrame.width, titleView.frame.size.height)
-                        }, completion: { (Bool) -> Void in
-                            completionHandler()
-                            if self.delayTimer > 0 {
-                                UIView.animateWithDuration(self.delayTimer, animations: { () -> Void in
-                                    if self.bannerView != nil {
-                                        self.bannerView.alpha = 0.8
-                                    }
-                                    }, completion: { (cpl) -> Void in
-                                        if cpl == true {
-                                            self.dismissNotify()
-                                        }
-                                })
-                            }
-                    })
+            
+            if self.bannerView != nil {
+                if self.tapGesture != nil {
+                    self.bannerView.removeGestureRecognizer(self.tapGesture!)
+                    self.tapGesture = nil
                 }
-        }
+                self.bannerView.removeFromSuperview()
+                self.bannerView = nil
+            }
+            
+            switch notifyType {
+            case DPNotifyType.DEFAULT: self.applyDefaultType()
+            case DPNotifyType.DANGER: self.applyDangerType()
+            case DPNotifyType.DISABLED: self.applyDisabledType()
+            case DPNotifyType.SUCCESS: self.applySuccessType()
+            case DPNotifyType.WARNING: self.applyWarningType()
+            }
+            
+            self.delayTimer = delay
+            
+            self.notifyTitle = title
+            self.tapToDismiss = dismissOnTap
+            
+            let containerFrame: CGRect = inView.frame
+            self.bannerView = UIView()
+            self.bannerView.backgroundColor = self.bannerBackgroundColor
+            
+            let calculationView: UITextView = UITextView()
+            calculationView.attributedText = NSAttributedString(string: self.notifyTitle, attributes:
+                [
+                    NSFontAttributeName: notifyTitleFont
+                ])
+            let size: CGSize = calculationView.sizeThatFits(
+                CGSizeMake(containerFrame.width - 16, CGFloat(FLT_MAX)))
+            var titleView = UITextView(
+                frame: CGRectMake(8, 0, containerFrame.width - 16, size.height))
+            titleView = applyTextViewStyle(titleView)
+            self.bannerView.addSubview(titleView)
+            self.bannerView.alpha = 0
+            self.bannerView.frame = CGRectMake(0, -titleView.frame.size.height, containerFrame.width, titleView.frame.size.height)
+            inView.addSubview(self.bannerView)
+            
+            if dismissOnTap == true {
+                addTapToDismissGesture()
+            }
+            
+            UIView.animateWithDuration(0.2, animations: { () -> Void in
+                self.bannerView.alpha = 1
+                titleView.alpha = 1
+                self.bannerView.frame = CGRectMake(0, 0, containerFrame.width, titleView.frame.size.height + 5)
+                }) { (Bool) -> Void in
+                    if self.bannerView != nil {
+                        UIView.animateWithDuration(0.2, animations: { () -> Void in
+                            self.bannerView.frame = CGRectMake(0, 0, containerFrame.width, titleView.frame.size.height)
+                            }, completion: { (Bool) -> Void in
+                                completionHandler()
+                                if self.delayTimer > 0 {
+                                    UIView.animateWithDuration(self.delayTimer, animations: { () -> Void in
+                                        if self.bannerView != nil {
+                                            self.bannerView.alpha = 0.8
+                                        }
+                                        }, completion: { (cpl) -> Void in
+                                            if cpl == true {
+                                                self.dismissNotify()
+                                            }
+                                    })
+                                }
+                        })
+                    }
+            }
     }
     
     func dismissNotify() {
@@ -320,12 +317,12 @@ class DPNotify: NSObject {
             UIView.animateWithDuration(0.2, animations: { () -> Void in
                 self.bannerView.alpha = 0
                 self.bannerView.frame = CGRectMake(0, -curFrame.height, curFrame.width, curFrame.height)
-            }, completion: { (cpl) -> Void in
-                if (cpl == true) {
-                    if self.bannerView != nil {
-                        self.bannerView = nil
+                }, completion: { (cpl) -> Void in
+                    if (cpl == true) {
+                        if self.bannerView != nil {
+                            self.bannerView = nil
+                        }
                     }
-                }
             })
         }
     }
@@ -420,5 +417,5 @@ class DPNotify: NSObject {
         textView.scrollEnabled = false
         return textView
     }
-   
+    
 }

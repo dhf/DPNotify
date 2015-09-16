@@ -40,7 +40,7 @@ class TableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
+        let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) 
         let bgStdView = UIView()
         bgStdView.backgroundColor = UIColor(white: 0.8, alpha: 0.2)
         cell.selectedBackgroundView = bgStdView
@@ -57,12 +57,12 @@ class TableViewController: UITableViewController {
             case 3: DPNotify.sharedNotify.showNotifyInView(view, title: items[indexPath.row], dismissOnTap: true, notifyType: .SUCCESS)
             case 4: DPNotify.sharedNotify.showNotifyInView(view, title: items[indexPath.row], dismissOnTap: true, notifyType: .DISABLED)
         case 5: DPNotify.sharedNotify.showNotifyInView(view, title: items[indexPath.row], dismissOnTap: true, notifyType: .DANGER, delay: 0, completionHandler: { () -> Void in
-            var alert = UIAlertView(title: "Completed!", message: "Notify showed!", delegate: nil, cancelButtonTitle: "はい！")
+            let alert = UIAlertView(title: "Completed!", message: "Notify showed!", delegate: nil, cancelButtonTitle: "はい！")
             alert.show()
         })
             case 6: DPNotify.sharedNotify.dismissNotify()
             case 7: DPNotify.sharedNotify.dismissNotify({ () -> Void in
-                var alert = UIAlertView(title: "Completed!", message: "Notify dismissed!", delegate: nil, cancelButtonTitle: "はい！")
+                let alert = UIAlertView(title: "Completed!", message: "Notify dismissed!", delegate: nil, cancelButtonTitle: "はい！")
                 alert.show()
             })
             case 8: DPNotify.sharedNotify.showNotifyInView(view, title: items[indexPath.row], dismissOnTap: false, notifyType: .SUCCESS, delay: 1.0)
